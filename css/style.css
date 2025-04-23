@@ -1132,3 +1132,288 @@ h1, h2, h3, h4, h5, h6 {
         text-align: left;
     }
 }
+/* Contact Page Styles */
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+}
+
+.contact-form-section {
+    padding: 80px 0;
+    background: var(--light-color);
+}
+
+.contact-form-section h2 {
+    margin-bottom: 30px;
+    color: var(--dark-color);
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.faq-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(230, 57, 70, 0.1);
+    color: var(--primary-dark);
+}
+
+/* Donate Page Styles */
+.donate-hero {
+    padding: 100px 0;
+    background: var(--secondary-color);
+}
+
+.why-donate {
+    padding: 80px 0;
+    background: white;
+}
+
+.reason-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 100%;
+}
+
+.reason-number {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.blood-types {
+    padding: 80px 0;
+    background: var(--secondary-color);
+}
+
+.blood-types-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blood-type-card {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.a-positive { background: #E63946; }
+.a-negative { background: #C1121F; }
+.b-positive { background: #1D3557; }
+.b-negative { background: #457B9D; }
+.ab-positive { background: #A8DADC; color: #333; }
+.ab-negative { background: #F1FAEE; color: #333; }
+.o-positive { background: #588157; }
+.o-negative { background: #3A5A40; }
+
+.donation-centers {
+    padding: 80px 0;
+    background: white;
+}
+
+.center-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.donate-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+
+/* Requirements Page Styles */
+.requirements-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.requirements-checklist {
+    padding: 80px 0;
+    background: white;
+}
+
+.checklist-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.checklist li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checklist-card:first-child .checklist li:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2328a745'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+}
+
+.checklist-card:last-child .checklist li:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23dc3545'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+}
+
+.preparation-section {
+    padding: 80px 0;
+    background: var(--secondary-color);
+}
+
+.prep-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    position: relative;
+}
+
+.prep-number {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.myths-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.myth-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.requirements-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+
+/* Schedule Donation Page Styles */
+.schedule-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.donation-form {
+    padding: 80px 0;
+    background: var(--light-color);
+}
+
+.form-section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.health-question {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .blood-types-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .donation-form .col-lg-8 {
+        padding: 0 15px;
+    }
+}
