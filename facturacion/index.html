@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEMOCENTRO DE PUEBLA - Facturación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/facturacion.css">
+</head>
+<body>
+    <div class="container-fluid invoice-app">
+        <!-- Header -->
+        <header class="invoice-header">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="../img/Wi – Fi.png" alt="Logo HEMOCENTRO" class="logo-img me-3">
+                        <h1 class="m-0">HEMOCENTRO DE PUEBLA</h1>
+                    </div>
+                    <a href="../index.html" class="btn btn-outline-light">
+                        <i class="fas fa-arrow-left me-2"></i>Volver al sitio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container my-5">
+            <div class="invoice-container">
+                <!-- Search Section -->
+                <section class="search-section p-4">
+                    <h2 class="mb-4"><i class="fas fa-file-invoice-dollar me-2"></i>Consulta de Facturas</h2>
+                    <form id="invoiceForm" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="invoiceNumber" class="form-label">Número de Folio <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="invoiceNumber" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="invoiceRFC" class="form-label">RFC</label>
+                            <input type="text" class="form-control" id="invoiceRFC" placeholder="Opcional">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="invoiceEmail" class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="invoiceEmail" required>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-search me-2"></i>Buscar Factura
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Results Section -->
+                <section id="resultsSection" class="results-section p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="m-0"><i class="fas fa-receipt me-2"></i>Resultados de la Búsqueda</h3>
+                        <div>
+                            <button id="downloadPDF" class="btn btn-danger me-2">
+                                <i class="fas fa-file-pdf me-2"></i>Descargar PDF
+                            </button>
+                            <button id="downloadXML" class="btn btn-success">
+                                <i class="fas fa-file-code me-2"></i>Descargar XML
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Preview -->
+                    <div class="invoice-preview">
+                        <div class="invoice-header-preview">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h2 class="invoice-title">HEMOCENTRO DE PUEBLA</h2>
+                                    <p class="mb-1"><strong>RFC:</strong> HEM210506PUE</p>
+                                    <p class="mb-1"><strong>Regimen Fiscal:</strong> Personas Morales con Fines no Lucrativos</p>
+                                    <p class="mb-1"><strong>Dirección:</strong> Av. Principal 123, Puebla, Pue.</p>
+                                </div>
+                                <div class="text-end">
+                                    <h3 class="invoice-type">FACTURA</h3>
+                                    <p class="mb-1"><strong>Folio:</strong> <span id="previewFolio">FAC-00001</span></p>
+                                    <p class="mb-1"><strong>Fecha:</strong> <span id="previewDate">21/04/2025</span></p>
+                                    <p class="mb-1"><strong>Forma de pago:</strong> Una sola exhibición</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invoice-body mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Datos del Emisor</h4>
+                                    <p class="mb-1"><strong>HEMOCENTRO DE PUEBLA</strong></p>
+                                    <p class="mb-1">Av. Principal 123, Puebla, Pue.</p>
+                                    <p class="mb-1">RFC: HEM210506PUE</p>
+                                    <p class="mb-1">Tel: (222) 123 4567</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Datos del Receptor</h4>
+                                    <p class="mb-1"><strong id="previewClientName">Juan Pérez Hernández</strong></p>
+                                    <p class="mb-1" id="previewAddress">Calle Ejemplo 456, Puebla</p>
+                                    <p class="mb-1">RFC: <span id="previewRFC">XAXX010101000</span></p>
+                                    <p class="mb-1">Email: <span id="previewEmail">cliente@ejemplo.com</span></p>
+                                </div>
+                            </div>
+
+                            <div class="invoice-items mt-4">
+                                <table class="table invoice-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cantidad</th>
+                                            <th>Descripción</th>
+                                            <th>P. Unitario</th>
+                                            <th>Importe</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="invoiceItems">
+                                        <!-- Items will be added dynamically -->
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>Subtotal:</strong></td>
+                                            <td>$<span id="subtotal">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>IVA (16%):</strong></td>
+                                            <td>$<span id="iva">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                                            <td>$<span id="total">0.00</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="invoice-footer mt-4 pt-3 border-top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>Método de Pago:</strong> Transferencia electrónica</p>
+                                    <p><strong>Cuenta:</strong> **** **** **** 1234</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Folio Fiscal:</strong> <span id="uuid">00000000-0000-0000-0000-000000000000</span></p>
+                                    <p><strong>No. Serie del CSD:</strong> <span id="satCert">00000000000000000000</span></p>
+                                </div>
+                            </div>
+                            <p class="text-center mt-3">Este documento es una representación impresa de un CFDI</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="invoice-footer-page bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2025 HEMOCENTRO DE PUEBLA. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">Sistema de Facturación Electrónica v1.0</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/facturacion.js"></script>
+</body>
+</html>

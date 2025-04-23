@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEMOCENTRO DE PUEBLA - Banco de Sangre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Wi – Fi.png" alt="Logo HEMOCENTRO DE PUEBLA" class="logo-img">
+                <span class="logo-text">HEMOCENTRO DE PUEBLA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Donar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Requisitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Centros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link btn-donar" href="#">¡Quiero Donar!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Una gota de ti, un océano de vida</h1>
+                    <p class="lead">Cada donación puede salvar hasta 3 vidas. Únete a nuestra comunidad de héroes anónimos.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-lg">Donar ahora</a>
+                        <a href="#" class="btn btn-outline-light btn-lg">Más información</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img src="img/BANNER.png" alt="Persona donando sangre" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Donaciones</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number" data-count="30000">0</div>
+                    <div class="stat-label">Vidas salvadas</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Centros</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Horas de espera</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-cards">
+        <div class="container">
+            <h2 class="section-title">Nuestro compromiso</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3>Visión</h3>
+                            <p>Consolidadrnos como una institución líder en el ámbito de la medicina transfucnional en el estado de Puebla, distinguiéndonos por nuestra excelencia operativa, compromiso con la seguridad transfucnional, atención humanizada al donador y colaboración con el sector salud para el fortalecimiento de los servicios médicos privados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3>Misión</h3>
+                            <p>Contribuir de manera responsable y eficiente a la preservación de la salud y la vida mediante la obtención, procesamiento, almacenamiento y distribución segura de la sangre y sus hemocomponentes, cumpliendo con los más altos estándares de calidad, ética y profesinalismo, en beneficio de la comunidad poblana y de la región.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3>Quiénes somos</h3>
+                            <p>Una organización sin fines de lucro comprometida con la salud y el bienestar de nuestra comunidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Process -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">¿Cómo donar?</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Registro</h3>
+                                <p>Completa el formulario con tus datos básicos y firma el consentimiento.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Evaluación</h3>
+                                <p>Un profesional verificará que cumples con los requisitos para donar.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Donación</h3>
+                                <p>El proceso dura aproximadamente 10 minutos y es completamente seguro.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Recuperación</h3>
+                                <p>Descansa y disfruta de un refrigerio mientras te recuperas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Gallery Section -->
+    <section class="process-gallery">
+        <div class="container">
+            <h2 class="section-title">Procesos que realizamos</h2>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <div class="gallery-photo">
+                        <img src="https://via.placeholder.com/400x300" alt="Proceso de registro" class="img-fluid">
+                        <div class="photo-overlay">
+                            <a href="#" class="photo-link"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-description">
+                        <h3>Registro de donantes</h3>
+                        <p>Nuestro equipo registra tus datos de manera confidencial y segura.</p>
+                        <a href="#" class="gallery-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <div class="gallery-photo">
+                        <img src="https://via.placeholder.com/400x300" alt="Proceso de donación" class="img-fluid">
+                        <div class="photo-overlay">
+                            <a href="#" class="photo-link"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-description">
+                        <h3>Donación segura</h3>
+                        <p>Ambientes esterilizados y profesionales capacitados garantizan tu seguridad.</p>
+                        <a href="#" class="gallery-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <div class="gallery-photo">
+                        <img src="https://via.placeholder.com/400x300" alt="Proceso de almacenamiento" class="img-fluid">
+                        <div class="photo-overlay">
+                            <a href="#" class="photo-link"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-description">
+                        <h3>Almacenamiento</h3>
+                        <p>Tu donación es procesada y almacenada con los más altos estándares de calidad.</p>
+                        <a href="#" class="gallery-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Historias que inspiran</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Gracias a los donantes, mi hija pudo superar la leucemia. Cada donación es un regalo de vida."</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/80x80" alt="María G." class="author-img">
+                                        <div class="author-info">
+                                            <h4>María González</h4>
+                                            <p>Madre de paciente</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Donar sangre es mi manera de retribuir. Es rápido, seguro y sabes que estás ayudando a salvar vidas."</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/80x80" alt="Carlos M." class="author-img">
+                                        <div class="author-info">
+                                            <h4>Carlos Mendoza</h4>
+                                            <p>Donante habitual</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Facturas Section -->
+<section class="invoices-section">
+    <div class="container">
+        <h2 class="section-title">Facturación Electrónica</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="invoice-card">
+                    <div class="invoice-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="invoice-content">
+                        <h3>Genera tu factura</h3>
+                        <p>Descarga tus facturas de donaciones o servicios de manera rápida y segura.</p>
+                        
+                        <form id="invoiceForm" class="mt-4">
+                            <div class="form-group mb-3">
+                                <label for="invoiceNumber" class="form-label">Número de Folio</label>
+                                <input type="text" class="form-control" id="invoiceNumber" placeholder="Ingresa tu folio" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="invoiceRFC" class="form-label">RFC</label>
+                                <input type="text" class="form-control" id="invoiceRFC" placeholder="Ingresa tu RFC">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="invoiceEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="invoiceEmail" placeholder="Ingresa tu email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Buscar Factura</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="invoice-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Facturación segura</h4>
+                            <p>Todas nuestras facturas cumplen con los requisitos del SAT y están protegidas con cifrado SSL.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Historial disponible</h4>
+                            <p>Accede a tu historial completo de facturas emitidas por donaciones o servicios.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud-download-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Descarga inmediata</h4>
+                            <p>Obtén tus facturas en formato PDF o XML para tus declaraciones fiscales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Invoice Preview (hidden by default) -->
+        <div id="invoicePreview" class="invoice-preview mt-5" style="display: none;">
+            <div class="preview-header">
+                <h3>Vista previa de tu factura</h3>
+                <button id="downloadInvoice" class="btn btn-danger">
+                    <i class="fas fa-file-pdf"></i> Descargar PDF
+                </button>
+            </div>
+            <div class="preview-content">
+                <div class="invoice-template">
+                    <div class="invoice-header">
+                        <img src="img/Wi – Fi.png" alt="HEMOCENTRO DE PUEBLA" class="invoice-logo">
+                        <div class="invoice-title">
+                            <h2>HEMOCENTRO DE PUEBLA</h2>
+                            <p>RFC: HEM210506PUE</p>
+                            <p>Regimen Fiscal: Personas Morales con Fines no Lucrativos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="invoice-details">
+                        <div class="details-left">
+                            <p><strong>Folio:</strong> <span id="previewFolio">FAC-00001</span></p>
+                            <p><strong>Fecha:</strong> <span id="previewDate">21/04/2025</span></p>
+                            <p><strong>Forma de pago:</strong> Una sola exhibición</p>
+                        </div>
+                        <div class="details-right">
+                            <h4>Datos del receptor</h4>
+                            <p id="previewClientName">Nombre del cliente</p>
+                            <p id="previewRFC">RFC: XAXX010101000</p>
+                            <p id="previewEmail">Email: cliente@ejemplo.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="invoice-items">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cantidad</th>
+                                    <th>Descripción</th>
+                                    <th>P. Unitario</th>
+                                    <th>Importe</th>
+                                </tr>
+                            </thead>
+                            <tbody id="invoiceItems">
+                                <!-- Items will be added dynamically -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>Subtotal:</strong></td>
+                                    <td>$<span id="subtotal">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>IVA (16%):</strong></td>
+                                    <td>$<span id="iva">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                                    <td>$<span id="total">0.00</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    
+                    <div class="invoice-footer">
+                        <p>Este documento es una representación impresa de un CFDI</p>
+                        <p>Folio Fiscal: <span id="uuid">00000000-0000-0000-0000-000000000000</span></p>
+                        <p>No. de Serie del Certificado del SAT: <span id="satCert">00000000000000000000</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para marcar la diferencia?</h2>
+                <p>Programa tu cita hoy mismo y conviértete en un héroe.</p>
+                <a href="#" class="btn btn-light btn-lg">Agendar donación</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer-brand">
+                    <img src="img/Wi – Fi.png" alt="Logo HEMOCENTRO DE PUEBLA" class="logo-img">
+                    <span class="logo-text">HEMOCENTRO DE PUEBLA</span>
+                    <p>Salvando vidas desde 2005</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Donar</a></li>
+                        <li><a href="#">Requisitos</a></li>
+                        <li><a href="#">Centros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@HEMOCENTRO DE PUEBLA.org</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-newsletter">
+                    <h3>Boletín</h3>
+                    <p>Suscríbete para recibir noticias y campañas.</p>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HEMOCENTRO DE PUEBLA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+<!-- Anime.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Agrega esto justo después de abrir el <body> -->
+<div id="particles-js"></div>
+
+<!-- Agrega esto antes del cierre del </body> -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
